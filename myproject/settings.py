@@ -161,7 +161,7 @@ STATIC_URL = '/static/'
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # For production
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'contact/static'),  # Include your static files directory
+    os.path.join(BASE_DIR, 'contact'),  # Include your static files directory
 ]
 
 
