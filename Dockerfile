@@ -1,5 +1,5 @@
 # Use the official Python 3.10 image from the Docker Hub
-FROM python:3.10-slim
+FROM python:3.9-slim
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -28,7 +28,7 @@ RUN python manage.py migrate
 RUN python manage.py collectstatic --noinput
 
 # Expose the port the app runs on
-EXPOSE 8000
+EXPOSE $PORT
 
 # Start the application with Gunicorn
 CMD ["gunicorn", "myproject.wsgi:application", "--bind", "0.0.0.0:$PORT"]
