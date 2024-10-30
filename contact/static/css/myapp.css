@@ -1,0 +1,246 @@
+
+.main-content {
+    margin-bottom: 0; /* Default margin */
+    transition: margin-bottom 0.3s ease; /* Smooth transition for margin */
+}
+
+.main-content.resume-active {
+    margin-bottom: 50px; /* Space when 'Resume' is active */
+}
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+.navbar {
+    background-color: #343a40;
+    padding: 1rem 1rem;
+}
+.navbar-brand {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2rem;
+    animation: colorChange 5s infinite;
+}
+@keyframes colorChange {
+    0% { color: #ff6347; }
+    25% { color: #4682b4; }
+    50% { color: #32cd32; }
+    75% { color: #ffd700; }
+    100% { color: #ff6347; }
+}
+.navbar-brand:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+.nav-link {
+    color: #ffffff !important;
+    margin-right: 20px;
+    transition: all 0.3s ease;
+}
+.nav-link:hover {
+    color: #ffc107 !important;
+    transform: scale(1.1);
+}
+.nav-link:active {
+    transform: scale(0.95);
+}
+.dropdown-item {
+    transition: background-color 0.3s;
+}
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Stylish hover effect */
+}
+.search-form {
+    display: flex;
+    align-items: center;
+}
+.search-form input {
+    margin-right: 10px;
+}
+.btn-green {
+    background-color: #28a745;
+    border: none;
+}
+.btn-green:hover {
+    background-color: #218838;
+}
+
+
+/* for footer secttion */
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+}
+.about-section {
+    margin-top: 50px;
+}
+
+.about-section h2 {
+    font-family: 'Georgia', serif;
+    color: #2c3e50;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.about-section .lead {
+    font-family: 'Arial Black', sans-serif;
+    color: #e74c3c;
+    transition: transform 0.3s;
+}
+
+.about-section .lead:hover {
+    transform: scale(1.05);
+    color: #d35400; /* Change color on hover */
+}
+
+.about-section p {
+    font-family: 'Verdana', sans-serif;
+    color: #34495e;
+}
+
+.about-section strong {
+    color: #2980b9; /* Default color for strong text */
+}
+
+.about-section strong:nth-of-type(1) {
+    color: #8e44ad; /* For college name */
+}
+
+.about-section strong:nth-of-type(2) {
+    color: #f39c12; /* For Bootstrap */
+}
+
+.about-section strong:nth-of-type(3) {
+    color: #27ae60; /* For Django */
+}
+
+.about-section strong:nth-of-type(4) {
+    color: #2980b9; /* For React */
+}
+
+
+
+/* for contact */
+
+.borderless-form {
+    border: 1px solid transparent; /* Invisible border */
+    border-radius: 20px;
+    padding: 20px;
+    transition: border-color 0.3s ease;
+}
+
+.borderless-form:hover {
+    border-color: blue; /* Color on hover */
+}
+
+.form-control {
+    transition: all 0.3s ease;
+    width: 70%; /* Initial width */
+    margin: 0 auto; /* Centering the input fields */
+}
+
+.form-control:hover {
+    width: calc(80% + 10px); /* Increase width on hover */
+    border: 2px solid #3498db; /* Change border color on hover */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Optional shadow for effect */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Button color */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+/* main section */
+
+
+.main-content {
+    background-image: url('/static/images/myapp-back-image.jpeg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    color: #343a40; /* Dark text color */
+    padding: 80px 20px; /* Increased padding for more vertical space */
+    text-align: left; /* Align text to the left */
+    min-height: 80vh; /* Set a minimum height for the main content */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+h1 {
+    font-size: 3rem; /* Size of the greeting */
+    color: #2c3e50; /* Darker color for the greeting */
+}
+
+h2 {
+    font-size: 2.5rem; /* Size of the name */
+    color: #2980b9; /* Blue color for the name */
+}
+
+h3 {
+    font-size: 2rem; /* Size of the title */
+    color: #27ae60; /* Green color for the title */
+}
+
+p {
+    font-size: 1.5em; /* Size of the creativity quote */
+    color: #34495e; /* Gray color for the quote */
+    font-style: italic; /* Italicize the quote */
+}
+
+/* for name */
+
+@keyframes colorChange {
+    0% { color: #ff5733; }  /* Red */
+    25% { color: #33ff57; } /* Green */
+    50% { color: #3357ff; } /* Blue */
+    75% { color: #f0e68c; } /* Yellow */
+    100% { color: #ff5733; } /* Red */
+}
+
+.animated-text {
+    animation: colorChange 4s infinite; /* 4 seconds duration, infinite loop */
+}
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
