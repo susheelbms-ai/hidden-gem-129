@@ -33,7 +33,6 @@ DEBUG = os.getenv('DEBUG', 'False') == 'True'
 ALLOWED_HOSTS = [os.getenv('ALLOWED_HOSTS', 'localhost')]
 
 
-
 # CYeaADFtsH-UA8SN6La5D9jJVmMQr-piVF7YNcEzY4DD2u3rKLr4CyufvkKDaJbLzps
 
 
