@@ -140,13 +140,21 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 STATIC_URL = '/static/'
 
 # Directory to look for static files
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'contact', 'static'),  # Adjust according to your structure
+# ]
+
+# # You might also want to set the static root for deployment
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
+
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # This is where files will be collected.
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'contact', 'static'),  # Adjust according to your structure
+    os.path.join(BASE_DIR, 'contact'),  # Include your contact folder.
+    # Add other directories as needed.
 ]
-
-# You might also want to set the static root for deployment
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
 
 
 
