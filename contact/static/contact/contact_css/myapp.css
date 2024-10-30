@@ -163,7 +163,7 @@ body {
 
 
 .main-content {
-    background-image: url('/static/images/myapp-back-image.jpeg'); /* Replace with your image path */
+    background-image: url('/static/contact/contact_images/myapp-back-image.jpeg'); /* Replace with your image path */
     background-size: cover; /* Ensures the image covers the entire area */
     background-position: center; /* Centers the image */
     color: #343a40; /* Dark text color */
