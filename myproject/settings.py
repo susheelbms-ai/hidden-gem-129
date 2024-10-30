@@ -149,13 +149,20 @@ STATIC_URL = '/static/'
 
 
 
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # This is where files will be collected.
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'contact'),  # Include your contact folder.
-    # Add other directories as needed.
-]
+# STATIC_URL = '/static/'
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # This is where files will be collected.
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'contact'),  # Include your contact folder.
+#     # Add other directories as needed.
+# ]
 
+
+
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # For production
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'contact/static'),  # Include your static files directory
+]
 
 
 
