@@ -1,0 +1,206 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+    
+    <title>Susheel S J </title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">Susheel S J | Portfolio!</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="resumeDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Resume
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="resumeDropdown">
+                    <a class="dropdown-item bg-primary text-white" href="{% static 'SUSHEEL_RESUME.pdf' %}" target="_blank">View Resume</a>
+                    <a class="dropdown-item bg-success text-white" href="{% static 'SUSHEEL_RESUME.pdf' %}" download>Download Resume</a>
+                </div>
+                
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                <form class="search-form" id="searchForm" action="#" method="get">
+                    <input type="text" id="searchInput" class="form-control" placeholder="Search..." aria-label="Search">
+                    <button type="submit" class="btn btn-green">Search</button>
+                </form>
+            </li>
+            
+        </ul>
+    </div>
+</nav>
+
+
+
+<div id="home" class="main-content" style="display: block; padding: 50px;">
+    <h1><b><i>Hello!</i></b></h1>
+
+
+    <h2 class="animated-text"><b><i>I'm Susheel S Jogdankar!</i></b></h2>
+
+
+    
+
+
+    <h3 style="text-align:left; margin: 20px 0; font-size: 2rem; color: #27ae60;">
+        <marquee style="margin-right: 50%; font-weight: bold; display: inline-block; color:blue">
+            Full Stack Web Developer from Bangalore....
+        </marquee>
+    </h3>
+    
+
+    
+    
+    <br><br>
+    <p style="font-size: 1.2em; margin-top: 20px; color:red"><b>
+        "Creativity is the power to connect the seemingly unconnected."</b>
+    </p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="about" class="about-section" style="display: none; margin-top: 50px;">
+    <div class="container">
+        <h2 class="display-4" style="font-family: 'Georgia', serif; color: #2c3e50;">About Me</h2>
+        <p class="lead" style="font-family: 'Arial Black', sans-serif; color: #e74c3c;">
+            Hello! I'm <span style="font-weight: bold; color: #2980b9;">Susheel Jogdankar</span>, a passionate <span style="font-weight: bold; color: #e67e22;">Full Stack Web developer</span> with a strong desire to create impactful digital experiences.
+        </p>
+        <p>
+            Currently, I am pursuing my Bachelor's degree at <strong style="color: #8e44ad;">BMS College of Engineering, Bangalore</strong>, where I am in my third year. My journey into web development started with a curiosity to understand how the internet works and has evolved into a deep passion for building responsive and engaging web applications.
+        </p>
+        <p>
+            I thrive on challenges and enjoy taking on projects that push my creative and technical boundaries. Whether it’s designing a sleek user interface using <strong style="color: #3498db;">Bootstrap</strong> or crafting dynamic interactions with <strong style="color: #e74c3c;">jQuery</strong>, I am dedicated to delivering exceptional user experiences.
+        </p>
+        <p>
+            My skill set includes proficiency in HTML, CSS, and JavaScript, along with popular frameworks such as <strong style="color: #f39c12;">Bootstrap</strong> for responsive design and <strong style="color: #27ae60;">Django</strong> for powerful backend development using Python. I am also familiar with using <strong style="color: #2980b9;">React</strong> to build dynamic user interfaces that are both efficient and enjoyable to interact with.
+        </p>
+        <p>
+            I believe in continuous learning and actively seek opportunities to expand my knowledge in emerging technologies and industry trends. I am always eager to explore new tools and frameworks that enhance my workflow and improve project outcomes.
+        </p>
+        <p>
+            In addition to my technical skills, I value collaboration and communication. I enjoy working in teams where ideas flow freely, and creativity thrives. I am always open to feedback and believe that it is an essential part of the growth process.
+        </p>
+        <p>
+            Outside of coding, I have a passion for exploring new technologies, contributing to open-source projects, and staying up-to-date with the latest trends in web development. I also enjoy photography and hiking, which inspire my creativity and keep me motivated.
+        </p>
+        <p>
+            Feel free to connect with me to discuss potential collaborations or just to share ideas. I'm excited to share my work with you and look forward to new opportunities ahead!
+        </p>
+    </div>
+</div>
+
+
+
+<div id="projects" class="projects-section">
+
+</div>
+
+
+
+<div id="contact" class="contact-section" style="display: none; margin-top: 50px;">
+    <div class="container">
+        <h2 class="text-center">Contact Me</h2>
+        <form id="contactForm" class="borderless-form" action="{% url 'contact' %}" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input style="border-radius:20px" type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input style="border-radius:20px" type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea style="border-radius:20px" class="form-control" id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+<footer class="footer" style="background-color: #343a40; color: #ffffff; padding: 0.3rem 0; text-align: center;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+        <div class="text-center">
+            <h3 class="social-links-title" style="font-size: 18px; color: #ffc107; margin-bottom: 0.2rem; animation: fadeIn 1s ease-in-out;">Social Links</h3>
+        </div>
+        <div class="navbar-nav text-center" style="display: flex; justify-content: center; margin: 0.3rem 0;">
+            <a class="nav-link social-link" href="https://www.instagram.com/susheel_sj/" target="_blank" style="color: #ffffff; font-size: 18px; margin: 0 10px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)'; this.style.color='#ffc107';" onmouseout="this.style.transform='scale(1)'; this.style.color='#ffffff';">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a class="nav-link social-link" href="https://www.facebook.com" target="_blank" style="color: #ffffff; font-size: 18px; margin: 0 10px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)'; this.style.color='#ffc107';" onmouseout="this.style.transform='scale(1)'; this.style.color='#ffffff';">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+            <a class="nav-link social-link" href="https://www.linkedin.com" target="_blank" style="color: #ffffff; font-size: 18px; margin: 0 10px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)'; this.style.color='#ffc107';" onmouseout="this.style.transform='scale(1)'; this.style.color='#ffffff';">
+                <i class="fab fa-linkedin-in"></i> LinkedIn
+            </a>
+        </div>
+    </div>
+    <div class="text-center" style="margin-top: 0.3rem; font-size: 12px;">
+        <p style="color:white">© 2024 Susheel Jogdankar. All rights reserved.</p>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="{% static 'js/script.js' %}"></script> 
+
+
+</body>
+</html>

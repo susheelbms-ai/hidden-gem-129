@@ -1,0 +1,24 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+env/
+.venv/
+.env
+
+# Database files
+db.sqlite3
+
+# Static files
+/static/
+/media/
+
+# IDE files
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
