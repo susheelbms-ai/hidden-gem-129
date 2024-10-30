@@ -7,6 +7,14 @@ WORKDIR /app
 # Copy the requirements file to the working directory
 COPY requirements.txt .
 
+
+
+# Upgrade pip
+RUN pip install --upgrade pip
+
+
+
+
 # Install the required packages
 RUN pip install --no-cache-dir -r requirements.txt
 
