@@ -130,14 +130,14 @@ USE_TZ = True
 
 
 
-import os
-from pathlib import Path
+# import os
+# from pathlib import Path
 
-# Define BASE_DIR
-BASE_DIR = Path(__file__).resolve().parent.parent
+# # Define BASE_DIR
+# BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Static files (CSS, JavaScript, Images)
-STATIC_URL = '/static/'
+# STATIC_URL = '/static/'
 
 # Directory to look for static files
 # STATICFILES_DIRS = [
